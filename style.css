@@ -688,4 +688,10 @@ a {
 #copyright h3 {
   font-size: 0.8rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 850px) {
+  .a_name {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

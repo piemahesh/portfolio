@@ -768,3 +768,9 @@ a {
         font-weight: 200;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .a_name{
+        display: none;
+    }
+}
