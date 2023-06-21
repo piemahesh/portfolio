@@ -709,8 +709,9 @@ a {
         }
     }
 }
+
 // .............................ownData end......................................
-#copyright{
+#copyright {
     height: 85vh;
     width: 100%;
     display: flex;
@@ -720,7 +721,8 @@ a {
     color: white;
     flex-direction: column;
     padding: 50px;
-    span{
+
+    span {
         height: 100px;
         width: 300px;
         display: flex;
@@ -729,12 +731,14 @@ a {
         gap: 10px;
         font-size: 2em;
         font-family: var(--Defont);
-        img{
+
+        img {
             height: 70px;
             width: 50px;
         }
     }
-    #nav_container{
+
+    #nav_container {
         height: 50px;
         width: 700px;
         display: flex;
@@ -742,7 +746,8 @@ a {
         justify-content: space-between;
         font-size: 0.6em;
         padding: 30px;
-        a{
+
+        a {
             font-size: 1.5em;
             color: white;
             text-decoration: none;
@@ -750,27 +755,154 @@ a {
             font-weight: 1000;
         }
     }
-    #icon_container{
+
+    #icon_container {
         height: 50px;
         width: 200px;
         display: flex;
         align-items: center;
-        justify-content:space-around;
+        justify-content: space-around;
         font-size: 2em;
-        i:hover{
+
+        i:hover {
             background: linear-gradient(to right, green, greenyellow);
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
-    h3{
+
+    h3 {
         font-size: 0.8rem;
         font-weight: 200;
     }
 }
 
+// ..................................portfolio.... start...............................
+.c_top_nav {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(180deg, white 100px, greenyellow 500px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Defont);
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffa600b6;
+}
+
+#cards {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // position: absolute;
+
+    #card_display {
+        height: 350px;
+        width: 340px;
+        position: relative;
+        perspective: 100px;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            box-shadow: 3px 3px 15px #8080808a;
+            display: flex;
+            border-left: 10px solid #acff2fa5;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            flex-direction: column;
+            position: absolute;
+            border-radius: 15px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            h1 {
+                font-family: var(--Defont);
+                color: grey;
+                font-size: 1.5em
+            }
+
+            h2 {
+                background: linear-gradient(to right, green, greenyellow);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 2em;
+                font-family: var(--a_defont);
+                font-weight: 900;
+            }
+
+            h3 {
+                color: #0000009d;
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        #back_card {
+            height: 100%;
+            width: 100%;
+            // background-color: yellow;
+            box-shadow: -2px -2px 10px #8080808a;
+            border-left: 10px solid #ffa600cb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 15px;
+            flex-direction: column;
+            position: absolute;
+            transform: rotateY(180deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            h1 {
+                font-family: var(--Defont);
+                color: orangered;
+                font-size: 1em
+            }
+
+            h2 {
+                background: linear-gradient(to right, green, greenyellow);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 1.5em;
+                font-weight: 900;
+            }
+
+            h3 {
+                background: linear-gradient(to right, orange, greenyellow);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 1.4em;
+                font-weight: 900;
+            }
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+// .................................port end..........................
 @media screen and (max-width: 850px) {
-    .a_name{
+    .a_name {
         display: none;
     }
 }
